@@ -10,6 +10,9 @@ namespace MS_Traider
     {
         static void Main(string[] args)
         {
+            Pluss500Api pluss500Api = new Pluss500Api();
+            pluss500Api.Loggin();
+
         }
     }
 }
