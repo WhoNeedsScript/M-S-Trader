@@ -12,6 +12,7 @@ namespace MS_Traider
         {
             Pluss500Api pluss500Api = new Pluss500Api();
             pluss500Api.Loggin();
+            pluss500Api.GetAllRawResource();
 
         }
     }

@@ -31,7 +31,17 @@ namespace MS_Traider
             driver.FindElementById("email").SendKeys("Magnus96@live.de");
             driver.FindElementById("password").SendKeys("Magnus1996");
             driver.FindElementById("submitLogin").Click();
-            
+            Thread.Sleep(3000);
+
+
+        }
+
+        public void GetAllRawResource()
+        {
+            driver.FindElementById("tradeNav").Click();
+            Thread.Sleep(1000);
+            driver.FindElement(By.XPath("//a[contains(text(), 'Alle Rohstoffe')]")).Click();
+
         }
     }
 }
